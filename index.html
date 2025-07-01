@@ -1,57 +1,47 @@
 
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>হিসাব</title>
-  <style>
-    body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
-    header { background: #222; color: #fff; padding: 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    .logo-img { max-width: 200px; margin-top: 10px; }
-    .section { padding: 20px; text-align: center; }
-    .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
-    .gallery img { width: 300px; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
-    table { margin: 20px auto; border-collapse: collapse; width: 80%; }
-    th, td { border: 1px solid #ccc; padding: 12px; text-align: center; }
-    th { background: #333; color: white; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fish Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>হিসাব</h1>
-    <img class="logo-img" src="logo.jpg" alt="Fish Hub Logo">
-    <p>আপনার পছন্দের একোয়ারিয়াম ফিশের নির্ভরযোগ্য ঠিকানা</p>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  <header class="bg-blue-900 text-white p-6">
+    <div class="text-3xl font-bold">🐠 Fish Hub</div>
+    <p class="text-sm">Fresh & Colorful Aquarium Fish</p>
   </header>
-  <section class="section">
-    <h2>ছবি গ্যালারি</h2>
-    <div class="gallery">
-      <img src="fish1.jpg" alt="Fish 1">
-      <img src="fish2.jpg" alt="Fish 2">
-      <img src="fish3.jpg" alt="Fish 3">
-    </div>
-  </section>
-  <section class="section">
-    <h2>মূল্য তালিকা</h2>
-    <table>
-      <tr>
-        <th>সাইজ (ইঞ্চি)</th>
-        <th>দাম (টাকা)</th>
-      </tr>
-      <tr>
-        <td>৮ - ১২</td>
-        <td>৬০০</td>
-      </tr>
-      <tr>
-        <td>৬.৯</td>
-        <td>৪৫০</td>
-      </tr>
-      <tr>
-        <td>৯ - ১৮</td>
-        <td>৮০০</td>
-      </tr>
-    </table>
-  </section>
+
+  <main class="p-6">
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">আমাদের রঙিন মাছসমূহ</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded shadow">
+          <img src="images/fish1.jpg" alt="Goldfish" class="rounded mb-2">
+          <h3 class="text-xl font-bold">গোল্ডফিশ</h3>
+          <p>দাম: ২০০ টাকা</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <img src="images/fish2.jpg" alt="Colorful Fish" class="rounded mb-2">
+          <h3 class="text-xl font-bold">রঙিন ফিশ (Mixed)</h3>
+          <p>দাম: ১৫০ টাকা</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">যোগাযোগ করুন</h2>
+      <div class="bg-white p-4 rounded shadow">
+        <p>📞 ফোন: <a href="tel:01753128139" class="text-blue-700">01753128139</a></p>
+        <p>💬 WhatsApp: <a href="https://wa.me/8801581459608" target="_blank" class="text-green-600">01581459608</a></p>
+        <p>🔗 Facebook: <a href="https://www.facebook.com/share/16gFhrjekL/" target="_blank" class="text-blue-500">প্রোফাইল লিঙ্ক</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    &copy; 2025 Fish Hub | সকল স্বত্ব সংরক্ষিত
+  </footer>
 </body>
 </html>
